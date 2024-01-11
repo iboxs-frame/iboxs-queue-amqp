@@ -1,0 +1,49 @@
+{
+    "name": "iboxs/iboxs-queue-amqp",
+    "description": "iboxs-queue for IBoxs amqp",
+    "authors": [
+        {
+            "name": "yunwuxin",
+            "email": "448901948@qq.com"
+        }
+    ],
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "iboxs\\": "src"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "iboxs\\test\\queue\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*",
+        "iboxs/iboxs-helper": "^1.0.0",
+        "iboxs/framework": "^1.0.0",
+        "iboxs/iboxs-factory": "^1.0.0",
+        "symfony/process": "^4.2",
+        "nesbot/carbon": "^2.16",
+        "php-amqplib/php-amqplib": "^2.12.1"
+    },
+    "extra": {
+        "iboxs": {
+            "services": [
+                "iboxs\\queue\\Service"
+            ],
+            "config": {
+                "queue": "src/config.php"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2",
+        "mockery/mockery": "^1.2",
+        "iboxs/iboxs-migration": "^1.0.0"
+    }
+}
