@@ -21,7 +21,6 @@
             "iboxs\\test\\queue\\": "tests"
         }
     },
-    "minimum-stability": "dev",
     "require": {
         "iboxs/iboxs-helper": "^1.0.0",
         "iboxs/framework": "^1.0.0",
