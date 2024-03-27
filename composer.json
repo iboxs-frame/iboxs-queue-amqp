@@ -23,7 +23,6 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "ext-json": "*",
         "iboxs/iboxs-helper": "^1.0.0",
         "iboxs/framework": "^1.0.0",
         "symfony/process": "^4.2",
